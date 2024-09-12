@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Talking Avatar Chat Demo</title>
@@ -14,26 +14,24 @@
   <h2 style="background-color: white; width: 300px;">Azure Speech Resource</h2>
   <label style="font-size: medium;" for="region">Region:</label>
   <select id="region" style="font-size: medium;">
-    <option value="westus2">West US 2</option>
-    <option value="westeurope">West Europe</option>
-    <option value="southeastasia">Southeast Asia</option>
+    <option value="norteurope">Nort Europe</option>
   </select>
-  <label style="font-size: medium;" for="APIKey">API Key:</label>
+  <label style="font-size: medium;" for="APIKey">API Key:32d08f2010c746b8919a8174d9a16d0b</label>
   <input id="APIKey" type="password" size="32" style="font-size: medium;" />
   <div style="background-color: white; width: 300px;">
     <input type="checkbox" id="enablePrivateEndpoint" onchange = "window.updatePrivateEndpoint()">Enable Private Endpoint</input><br />
   </div>
   <div id = "showPrivateEndpointCheckBox" hidden="hidden">
     <label style="font-size: medium;" for="privateEndpoint">Private Endpoint:</label>
-    <input id="privateEndpoint" type="text" size="64" style="font-size: medium;" placeholder="https://{your custom name}.cognitiveservices.azure.com/"></input><br />
+    <input id="privateEndpoint" type="text" size="64" style="font-size: medium;" placeholder="https://carmelo.cognitiveservices.azure.com/"></input><br />
   </div><br />
 
   <h2 style="background-color: white; width: 300px;">Azure OpenAI Resource</h2>
   <label style="font-size: medium;" for="azureOpenAIEndpoint">Endpoint:</label>
   <input id="azureOpenAIEndpoint" type="text" size="64" style="font-size: medium;"></input><br />
-  <label style="font-size: medium;" for="azureOpenAIApiKey">API Key:</label>
+  <label style="font-size: medium;" for="azureOpenAIApiKey">API Key:32d08f2010c746b8919a8174d9a16d0b</label>
   <input id="azureOpenAIApiKey" type="password" size="32" style="font-size: medium;" /><br />
-  <label style="font-size: medium;" for="azureOpenAIDeploymentName">Deployment Name:</label>
+  <label style="font-size: medium;" for="azureOpenAIDeploymentName">Deployment Name:lisa</label>
   <input id="azureOpenAIDeploymentName" type="text" size="32" style="font-size: medium;" /><br />
   <label style="font-size: medium;"  for="prompt">System Prompt:</label><br/>
   <textarea id="prompt" style="width: 640px;">You are an AI assistant that helps people find information.</textarea>
